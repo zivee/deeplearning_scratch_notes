@@ -52,6 +52,8 @@ def step_function(x):
     return np.array(x>0, dtype=np.int)
 
 print(step_function(np.array([-1, 2, 3])))
+
+# %%
 x = np.arange(-5, 5, 0.1)
 y = step_function(x)
 plt.ylim(-0.1, 1.1)
@@ -67,4 +69,14 @@ plt.show()
 
 # %%
 def simgoid_func(x):
-    pass
+    return 1/(1+np.exp(-x))
+
+
+# %%
+x = np.arange(-5, 5, 0.1)
+y = simgoid_func(x)
+plt.ylim(-0.1, 1.1)
+plt.plot(x, y)
+plt.show()
+
+# %%
