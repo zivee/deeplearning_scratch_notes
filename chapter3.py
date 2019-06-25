@@ -102,6 +102,7 @@ Y = np.dot(X, W)
 print(Y)
 
 
+
 # %% [markdown]
 # 加上加权后表示如下
 #
