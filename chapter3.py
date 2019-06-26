@@ -214,7 +214,8 @@ print(softmax(a))
 
 # %%
 def get_data():
-    # 获取测试数据集， 并正规货预处理
+    # 获取测试数据集， 并正规化预处理
+    # x_test/t_test 监督数据
     _, (x_test, t_test) = load_mnist(normalize=True, flatten=True)
     print(x_test.shape)
     print(t_test.shape)
